@@ -3,20 +3,20 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "version": "./node_modules/.bin/lerna version --yes",
-    "publish": "./node_modules/.bin/lerna publish --yes",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "author": "mredjem",
   "license": "ISC",
-  "devDependencies": {
-    "cz-conventional-changelog": "^3.1.0",
-    "lerna": "^3.20.2"
+  "scripts": {
+    "version": "lerna version --yes",
+    "publish": "lerna publish --yes",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "devDependencies": {
+    "cz-conventional-changelog": "^3.1.0",
+    "lerna": "^3.20.2"
   }
 }
