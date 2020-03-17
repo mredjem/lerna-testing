@@ -5,10 +5,12 @@
   "version": "independent",
   "command": {
     "publish": {
-      "conventionalCommits": true
+      "conventionalCommits": true,
+      "registry": "http://npmserver:4873"
     },
     "version": {
-      "message": "chore(release): release"
+      "createRelease": "github",
+      "message": "chore(release): %v [skip ci]"
     }
   }
 }

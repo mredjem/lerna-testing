@@ -1,7 +1,24 @@
 # lerna-testing
 
-## Init
+**Prerequisites**
 
+ - node
+ - lerna
+
+## Installation
+
+```bash
+$ npm ci
 ```
-lerna init -i
+
+## Release
+
+```bash
+$ npm run version
+```
+
+## Publish
+
+```bash
+$ npm run publish
 ```
