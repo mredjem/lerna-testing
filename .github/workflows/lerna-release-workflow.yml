@@ -13,6 +13,12 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 12
+      - uses: actions/cache@v1
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
       - run: npm ci
 
   release:
@@ -22,6 +28,12 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 12
+      - uses: actions/cache@v1
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
       - run: git config user.email "medhi.redjem@gmail.com"
       - run: git config user.name  "Medhi REDJEM"
       - run: npm run version
@@ -35,6 +47,12 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 12
+      - uses: actions/cache@v1
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
       - run: echo 'npm run publish' # npm run publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
