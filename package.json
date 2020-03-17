@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "version": "lerna version --yes",
-    "publish": "lerna publish --yes",
+    "version": "./node_modules/.bin/lerna version --yes",
+    "publish": "./node_modules/.bin/lerna publish --yes",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "mredjem",
