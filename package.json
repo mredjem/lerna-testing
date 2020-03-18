@@ -1,7 +1,7 @@
 {
   "name": "lerna-testing",
   "version": "1.0.0",
-  "description": "",
+  "description": "Dummy repository to test Lerna features and Github actions.",
   "main": "index.js",
   "author": "mredjem",
   "license": "ISC",
