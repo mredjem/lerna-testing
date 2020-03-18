@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.4](https://github.com/mredjem/lerna-testing/compare/package-1@0.1.3...package-1@0.1.4) (2020-03-18)
+
+**Note:** Version bump only for package package-1
+
+
+
+
+
 ## 0.1.3 (2020-03-18)
 
 **Note:** Version bump only for package package-1
