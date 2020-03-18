@@ -6,6 +6,7 @@
   "author": "mredjem",
   "license": "ISC",
   "scripts": {
+    "commit": "git-cz",
     "version": "lerna version",
     "publish": "lerna publish"
   },

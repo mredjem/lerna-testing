@@ -29,6 +29,6 @@ jobs:
       - run: npm run version -- --yes
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - run: echo 'npm run publish -- --yes' # npm run publish -- --yes
+      - run: echo 'npm run publish -- --yes from-package' # npm run publish -- --yes from-package
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
