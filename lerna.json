@@ -8,6 +8,7 @@
       "registry": "http://npmserver:4873"
     },
     "version": {
+      "createRelease": "github",
       "conventionalCommits": true,
       "message": "chore(release): publish [skip ci]"
     }

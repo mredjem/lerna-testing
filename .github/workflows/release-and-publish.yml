@@ -1,4 +1,4 @@
-name: Release with Lerna
+name: Release and publish
 
 on:
   push:
@@ -10,6 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - run: git fetch origin +refs/tags/*:refs/tags/*
       - uses: actions/setup-node@v1
         with:
           node-version: 12.x
@@ -23,9 +26,9 @@ jobs:
           git config user.email "medhi.redjem@gmail.com"
           git config user.name  "Medhi REDJEM"
       - run: npm ci
-      - run: npm run version
+      - run: npm run version -- --yes
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - run: echo 'npm run publish' # npm run publish
+      - run: echo 'npm run publish -- --yes' # npm run publish -- --yes
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
